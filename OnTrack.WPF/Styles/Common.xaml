@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:OnTrack.WPF.Styles">
+
+    <!--Colors-->
+    <Color x:Key="PrimaryColor1">#2ddf3c</Color>
+    <Color x:Key="PrimaryColor2">#13601a</Color>
+    
+</ResourceDictionary>
