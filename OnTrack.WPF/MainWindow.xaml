@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OnTrack.WPF"
+        xmlns:controls="clr-namespace:OnTrack.WPF.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -11,7 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
+        <controls:NavigationBar/>
         <ContentControl Grid.Row="1" Content="{Binding CurrentViewModel}"></ContentControl>
     </Grid>
 </Window>

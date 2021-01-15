@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:OnTrack.WPF.UserControls"
+             xmlns:nav="clr-namespace:OnTrack.WPF.ViewModels.Factory"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -12,6 +13,31 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="OnTrack" FontSize="32" Foreground="WhiteSmoke"></TextBlock>
+        <TextBlock Text="OnTrack" FontSize="32" Foreground="WhiteSmoke" Background="{StaticResource PrimaryBrush1}"/>
+        <Grid Grid.Row="1" RenderOptions.EdgeMode="Aliased" Background="{StaticResource PrimaryBrush2}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.Resources>
+                <Style TargetType="RadioButton" BasedOn="{StaticResource NavButton}"></Style>
+            </Grid.Resources>
+
+            <RadioButton Grid.Column="0"
+                         Content="Home"
+                         Command="{Binding UpdateCurrentViewModelCommand}"
+                         CommandParameter="{x:Static nav:ViewType.Home}"/>
+            <RadioButton Grid.Column="1"
+                         Content="Loan Profile"
+                         Command="{Binding UpdateCurrentViewModelCommand}"
+                         CommandParameter="{x:Static nav:ViewType.LoanProfile}"/>
+            <RadioButton Grid.Column="2"
+                         Content="Payments"
+                         Command="{Binding UpdateCurrentViewModelCommand}"
+                         CommandParameter="{x:Static nav:ViewType.Payments}"/>
+        </Grid>
     </Grid>
 </UserControl>

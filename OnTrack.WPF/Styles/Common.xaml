@@ -3,7 +3,11 @@
                     xmlns:local="clr-namespace:OnTrack.WPF.Styles">
 
     <!--Colors-->
-    <Color x:Key="PrimaryColor1">#2ddf3c</Color>
-    <Color x:Key="PrimaryColor2">#13601a</Color>
+    <Color x:Key="PrimaryColor1">#0b0c10</Color>
+    <Color x:Key="PrimaryColor2">#1F2833</Color>
     
+    <!--Brushes-->
+    <SolidColorBrush x:Key="PrimaryBrush1" Color="{StaticResource PrimaryColor1}"/>
+    <SolidColorBrush x:Key="PrimaryBrush2" Color="{StaticResource PrimaryColor2}"/>
+
 </ResourceDictionary>

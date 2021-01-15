@@ -1,13 +1,19 @@
 ﻿<Application x:Class="OnTrack.WPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:OnTrack.WPF"
-             StartupUri="MainWindow.xaml">
+             xmlns:views="clr-namespace:OnTrack.WPF.Views"
+             xmlns:viewModels="clr-namespace:OnTrack.WPF.ViewModels"
+             xmlns:local="clr-namespace:OnTrack.WPF">
     <Application.Resources>
-         <ResourceDictionary>
-             <ResourceDictionary.MergedDictionaries>
-                 <ResourceDictionary Source="Styles/Common.xaml"></ResourceDictionary>
-             </ResourceDictionary.MergedDictionaries>
-         </ResourceDictionary>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Common.xaml"/>
+                <ResourceDictionary Source="Styles/NavigationBar.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModels:HomeViewModel}">
+                <views:HomeView/>
+            </DataTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

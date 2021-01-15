@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTrack.Framework", "OnTrack.Framework\OnTrack.Framework.csproj", "{62177541-E885-4C78-8141-B58232C9758A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnTrack.Framework", "OnTrack.Framework\OnTrack.Framework.csproj", "{62177541-E885-4C78-8141-B58232C9758A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTrack.WPF", "OnTrack.WPF\OnTrack.WPF.csproj", "{2E8EE59F-D9DC-45BB-97C3-9F8314A809F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnTrack.WPF", "OnTrack.WPF\OnTrack.WPF.csproj", "{2E8EE59F-D9DC-45BB-97C3-9F8314A809F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTrack.AWS", "OnTrack.AWS\OnTrack.AWS.csproj", "{AEE98998-41D9-44A6-9845-92BA1A2F63CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2E8EE59F-D9DC-45BB-97C3-9F8314A809F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E8EE59F-D9DC-45BB-97C3-9F8314A809F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E8EE59F-D9DC-45BB-97C3-9F8314A809F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE98998-41D9-44A6-9845-92BA1A2F63CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE98998-41D9-44A6-9845-92BA1A2F63CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE98998-41D9-44A6-9845-92BA1A2F63CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE98998-41D9-44A6-9845-92BA1A2F63CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
