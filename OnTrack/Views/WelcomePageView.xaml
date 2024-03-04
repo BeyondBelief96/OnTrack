@@ -7,6 +7,122 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Offset="0.0" Color="{StaticResource SecondaryColor5}" />
+                <GradientStop Offset="1.0" Color="{StaticResource SecondaryColor5}" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel
+        Grid.Row="0"
+        Grid.Column="0"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        Orientation="Horizontal">
+            <Image
+            Grid.Row="0"
+            Width="50"
+            Margin="50,0,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            RenderOptions.BitmapScalingMode="HighQuality"
+            Source="/Resources/piggybank.png" />
+            <Label
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="On Track"
+            FontFamily="/Fonts/#Amatic"
+            FontSize="40"
+            FontWeight="ExtraLight"
+            Foreground="White" />
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="1"
+        Grid.Column="0"
+        Margin="30,0,0,0"
+        VerticalAlignment="Center"
+        Orientation="Vertical">
+            <TextBlock
+            FontFamily="/Fonts/#Amatic"
+            FontSize="40"
+            FontWeight="Medium"
+            Foreground="White"
+            Text="Plan your budget," />
+            <TextBlock
+            FontFamily="/Fonts/#Amatic"
+            FontSize="40"
+            FontWeight="Medium"
+            Foreground="White"
+            Text="Track your debt," />
+            <TextBlock
+            FontFamily="/Fonts/#Amatic"
+            FontSize="40"
+            FontWeight="Medium"
+            Foreground="White"
+            Text="Save more money." />
+        </StackPanel>
+
+        <Grid
+        Grid.Row="2"
+        Grid.Column="1"
+        Width="Auto"
+        Margin="0,0,0,0">
+            <Grid.RenderTransform>
+                <RotateTransform Angle="-45" />
+            </Grid.RenderTransform>
+
+            <StackPanel Margin="-1300,0,0,0" Orientation="Vertical">
+                <Border
+                Width="1600"
+                Height="25"
+                Margin="5"
+                Background="{StaticResource SecondaryBrush1}"
+                CornerRadius="20" />
+                <Border
+                Width="1600"
+                Height="25"
+                Margin="30,5,5,5"
+                Background="{StaticResource SecondaryBrush2}"
+                CornerRadius="20" />
+                <Border
+                Width="1600"
+                Height="25"
+                Margin="5"
+                Background="{StaticResource SecondaryBrush3}"
+                CornerRadius="20" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel
+        Grid.Row="1"
+        Grid.Column="2"
+        Width="Auto"
+        Height="Auto"
+        Margin="0,0,50,0"
+        Orientation="Horizontal">
+
+            <Button
+            Width="100"
+            Height="35"
+            Margin="10,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalContentAlignment="Center"
+            Command="{Binding NavigateToLoginCommand}"
+            Content="Login" />
+        </StackPanel>
+
     </Grid>
 </UserControl>

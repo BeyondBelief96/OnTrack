@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\piggybank.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
+    <PackageReference Include="FirebaseAuthentication.WPF" Version="4.1.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
@@ -17,7 +23,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <Resource Include="Resources\piggybank.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

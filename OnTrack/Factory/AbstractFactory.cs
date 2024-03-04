@@ -9,7 +9,7 @@ public class AbstractFactory<T> : IAbstractFactory<T>
         _factory = factory;
     }
 
-    public T Create()
+    public T Resolve()
     {
         return _factory();
     }

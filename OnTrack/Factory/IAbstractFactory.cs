@@ -2,6 +2,6 @@
 {
     public interface IAbstractFactory<T>
     {
-        T Create();
+        T Resolve();
     }
 }
