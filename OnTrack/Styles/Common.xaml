@@ -10,7 +10,7 @@
     <Color x:Key="SecondaryColor4">#a4161a</Color>
     <Color x:Key="SecondaryColor5">#161a1d</Color>
     <Color x:Key="SecondaryColor6">#121517</Color>
-    <Color x:Key="ButtonTextColor">White</Color>
+    <Color x:Key="DefaultTextColor">White</Color>
 
 
     <!--  Brushes  -->
@@ -22,7 +22,7 @@
     <SolidColorBrush x:Key="SecondaryBrush4" Color="{StaticResource SecondaryColor4}" />
     <SolidColorBrush x:Key="SecondaryBrush5" Color="{StaticResource SecondaryColor5}" />
     <SolidColorBrush x:Key="SecondaryBrush6" Color="{StaticResource SecondaryColor6}" />
-    <SolidColorBrush x:Key="ButtonTextBrush" Color="{StaticResource ButtonTextColor}" />
+    <SolidColorBrush x:Key="DefaultTextBrush" Color="{StaticResource DefaultTextColor}" />
 
     <Style TargetType="Label">
         <Setter Property="FontFamily" Value="/Fonts/#Amatic" />

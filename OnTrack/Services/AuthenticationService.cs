@@ -32,6 +32,7 @@ public class AuthenticationService : IAuthenticationService
                 {
                     LoggedInUser = null;
                     OnUserLoggedOut?.Invoke();
+                    _navigationService.NavigateTo<WelcomePageViewModel>();
                 }
 
             }

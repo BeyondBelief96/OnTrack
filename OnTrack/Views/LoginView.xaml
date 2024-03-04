@@ -8,7 +8,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <firebase:FirebaseUIControl>
+        <firebase:FirebaseUIControl Background="{DynamicResource SecondaryBrush6}"
+                                    Foreground="{DynamicResource DefaultTextBrush}">
             <firebase:FirebaseUIControl.Header>
                 <StackPanel>
                     <Image Height="30"
@@ -17,7 +18,9 @@
                         HorizontalAlignment="Center"
                         FontSize="16"
                         TextWrapping="Wrap"
-                        TextAlignment="Center"/>
+                        TextAlignment="Center"
+                        Text="Select A Sign In Provider Below!"
+                        Foreground="{DynamicResource DefaultTextBrush}"/>
                 </StackPanel>
             </firebase:FirebaseUIControl.Header>
         </firebase:FirebaseUIControl>    

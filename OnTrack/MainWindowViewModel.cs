@@ -15,10 +15,10 @@ public partial class MainWindowViewModel : BaseViewModel
         _navigationService = navigationService;
         _authenticationService = authenticationService;
         _authenticationService.OnUserLoggedIn += _authenticationService_OnUserLoggedIn;
+        _authenticationService.OnUserLoggedOut += _authenticationService_OnUserLoggedOut;
         _navigationService.CurrentViewModelChanged += _navigationService_CurrentViewModelChanged;
         _navigationService.NavigateTo<WelcomePageViewModel>();
     }
-
 
     public BaseViewModel? CurrentViewModel => _navigationService.CurrentViewModel;
 
@@ -35,9 +35,14 @@ public partial class MainWindowViewModel : BaseViewModel
         OnPropertyChanged(nameof(CurrentViewModel));
     }
 
-
     private void _authenticationService_OnUserLoggedIn()
     {
         OnPropertyChanged(nameof(UserLoggedIn));
     }
+
+    private void _authenticationService_OnUserLoggedOut()
+    {
+        OnPropertyChanged(nameof(UserLoggedIn));
+    }
+
 }
